@@ -1,0 +1,282 @@
+/* display:flex use karte hai ek row me lane ke liye 
+to jisko bhi ek row me lana hoga uske parent ko display:flex dena */
+* {
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* vertically center me karega*/
+    justify-content: space-evenly;
+
+}
+
+/* div ka background-image tab tak nhi dikhega jab tak usko height,width nhi set karega */
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    /* % i.e apne parent ke hisaab se bada chota hoga  */
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+.nav-address{
+    padding: 4px;
+    margin: 4px;
+}
+.add-first {
+    color: #cccccc;
+    font-size: 0.75rem;
+    margin: 0px 0px 0px 15px ;
+}
+
+.add-second {
+    font-size: 0.85rem;
+    padding: 0px 0px 0px 2px;
+}
+.add-icon {
+    display: flex;
+    align-items: center;
+    margin:0px 0px 0px ;
+}
+/*  box3 */
+.nav-search {
+    display: flex;
+    background-color: pink;
+    width: 780px;
+    height: 40px;
+    border-radius: 3px;
+    justify-content: space-evenly;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center; /* horizontal me center */
+    border-top-left-radius: 3px ;
+    border-bottom-left-radius: 3px;
+    border: none; /* by default border hatt jaega  */
+}
+.search-input{
+    border: none;
+    font-size: 1rem;
+    width: 100%; /* ye apne div me extra space ko ye occupy kar lega  */
+}
+.search-icon{
+    width: 45px;
+    display: flex;      /*  justify-content aur align-items display: flex rehne par hi kaam karti hai*/ 
+    justify-content: center;
+    align-items: center;
+    background-color: #fedb68;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.nav-search:hover{
+    border: 2.5px solid  orange;
+}
+
+  /* box -4 */
+span{
+    font-size: 0.7rem ;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* box 6 */
+.nav-cart i{
+    font-size: 30px;
+}
+.nav-cart{
+    font-size: 1.5remm;
+    font-weight: 700;
+}
+
+/*  panel */ 
+.panel{
+    height: 39px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.panel-ops p{
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.hero-section{
+    background-image: url('hero_image.jpg');/* ye tab tak nhi dikhega jab tak height width set nhi karega  */ 
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;/*  justify-content aur align-items display: flex rehne par hi kaam karti hai*/
+    font-size: 0.85rem;
+    /* bottom: 100rem; /*  ye bhi tab tak kaam nhi karega jab tak isko position nhi set karega kuch  */
+    /* position: relative; */ 
+    margin-bottom: 10px;
+}
+
+.hero-msg a{
+    color:#007185
+}
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 400px;
+    width: 23%;
+    margin-top: 15px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px ;
+}
+
+.box-img{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.box-content{
+    margin-left: 1rem ;
+    margin-right: 1rem;
+}
+.box-content p{
+    color:#007185;
+}
+
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel{
+    background-color:#37475a;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 0.85rem;
+}
+
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul p{
+    font-weight: 700;
+    margin-top: 20px ;
+}
+
+ul a{
+    display: block;
+    text-decoration: none;
+    color: #DDDDDD;
+    font-size: 0.85rem;
+    margin-top:  10px ;
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* for vertical  */
+}
+.logo1{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    /* width: 100%;  NOTE: kabhi bhi % apne parent ka width me utna % fill hoga jitna apun dalenge toh kabhi bhi parent ka width nhi diya to toh image render nhi hoga*/  
+    width: 100px;
+}
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    text-align: center ;
+    font-size: 0.7rem;  
+}
+
+.pages{
+  
+   
+    padding-top: 25px;
+}
+.copyright{
+}
+
+.pages a{
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
